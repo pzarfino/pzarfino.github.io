@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* header */
+
+header {
+    position:relative;
+    display: flex;
+    background-image: url(../img/roses-pattern.jpg);
+    background-size: 30rem;
+    height: 10rem;
+    flex-direction: row-reverse;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0rem;
+    height: 1.5rem;
+    width: 100%;
+    background-color: rgba(228, 154, 154, 0.95);
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: rgba(7, 52, 71, 1);
+    letter-spacing: 0.15rem;
+    padding-top: 0.3rem;
+    font-family: 'Just Another Hand', cursive;
+}
+
+/* Menú hamburguesa con desplegable */
+
+.respmenu {
+    color: rgba(7, 52, 71, 0.8);
+    position: relative; 
+    top: 8.3rem;
+}
+
+/* Iconos */
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;  
+    box-sizing: border-box;
+    right: 0rem;
+    width: 2rem;
+    height: 5rem;  
+}
+
+.respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 1.6rem;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0; 
+}
+
+.respmenu nav {
+    display: none;
+}
+
+.respmenu input:checked ~ nav {
+    display: block;
+}
+
+.respmenu input:checked ~ .fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1.8rem;
+}
+
+/* Opciones lista */
+
+.respmenu a { 
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem 0.8rem;
+    border: 0.15rem solid rgba(247, 211, 155, 0.9);
+    border-radius: 0.6rem;
+    width: 8rem;
+    background: rgba(228, 154, 154, 0.95);
+    color: rgba(7, 52, 71, 1);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 211, 155, 0.8);
+    padding: 2rem 0 5.5rem;
+    height: 30rem;
+    padding-bottom: 5rem;
+}
+
+main img {
+    align-self: center;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50rem;
+    margin: 1rem 0 2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 0.5rem 2rem 1rem;
+    font-weight: 300;
+    color: rgba(7, 52, 71, 1);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(228, 154, 154, 0.9);
+    height: 2rem;
+    color: rgba(7, 52, 71, 1);
+    gap: 1rem;
+    font-weight: 400;    
+    font-size: 1.3rem;    
+    font-family: 'Just Another Hand', cursive;
+    letter-spacing: 0.1rem;
+}
+
