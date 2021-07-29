@@ -132,7 +132,7 @@ main section.gallery-container {
     display: grid;
     /* Filas a ocupar */
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 10rem;
+    /* grid-auto-rows: 10rem; */
     padding: 0.7rem;
     grid-gap:0.5rem;
 }
@@ -143,33 +143,35 @@ main section.gallery-container img{
     object-fit: cover;
 }
 
-/* Que la tercer imagen ocupe 2 filas */
+/* Que la tercer imagen ocupe 2 columnas */
 
 main section.gallery-container img:nth-child(3){
     grid-column-start: span 2;
 }
 
 /* Segundo tipo de galería */
+
 /* Parte fija */
 
 main section.gallery-container2 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
     margin: auto;
     list-style: none;
-    padding: 1.25rem;
+    padding: 0.5rem;
     box-sizing: border-box;
 }
 
-main section.gallery-container2 ul li {
+/* main section.gallery-container2 ul li {
     margin: 0.3rem;
-}
+} */
 
 main section.gallery-container2 ul li a img{
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
+    margin: 0.2rem;
 }
 
 /* Parte flotante*/
