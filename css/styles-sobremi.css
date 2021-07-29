@@ -132,7 +132,7 @@ main section.gallery-container {
     display: grid;
     /* Filas a ocupar */
     grid-template-columns: repeat(2, 1fr);
-    /* grid-auto-rows: 10rem; */
+    grid-auto-rows: 10rem;
     padding: 0.7rem;
     grid-gap:0.5rem;
 }
